@@ -19,11 +19,13 @@ I used an alpha value of `0.05` for a one-tailed Welch's T-Test.
 
 ### Results
 
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/Northwind_ERD_updated.png'>
+<img src="Images-Used/Q1_1.png" width = "500" >
 
 For all discount levels (5%, 10%, 15%, 20%, and 25%) we can reject the null hypothesis, since each of their *p-values* are less than the alpha (`0.05`). 
 
 **This means that every discount level has a statistically significant effect on the quantity of product ordered.** 
+
+<img src="Images-Used/Q1_2.png" width = "500" >
 
 From our data, we can see that the 10% discount level has the smallest effect, where orders only have on average `3.5` more quantity ordered than non-discounted orders (`d = 0.196`), while the 15% discount level had the largest effect, where orders have on average `6.7` more quanity ordered than non-discounted orders. (`d = 0.373`).
 
@@ -42,10 +44,10 @@ I used an alpha value of `0.05` in a Tukey's Range test (one-tailed).
 ### Results
 
 #### Visualization of the results of the Tukey's Range Test
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/Northwind_ERD_updated.png'>
+<img src="Images-Used/Q2_1.png" width = "500" >
 
 #### D-values between each of the categories
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/Northwind_ERD_updated.png'>
+<img src="Images-Used/Q2_2.png" width = "500" >
 
 By basing our order off of the Cohen's d-value between the 'Produce' category and every other category, we get the following hierarchy:
 
@@ -83,7 +85,7 @@ I used an alpha value of `0.025` in a two-tailed Student's T-Test.
 
 ### Results
 
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/Northwind_ERD_updated.png'>
+<img src="Images-Used/Q3.png" width = "500" >
 
 We can see that revenue generated per order by the two regions reponsible for selling Northwind's products, **North America** and the **British Isles**, is not statistically different, therefore we have failed to reject the null hypothesis. In the graph above, we can see that our t-statistic is between the positive and negative t-critical values, meaning that the one group doesn't sell statistically more or less than the other per order.
 
@@ -107,7 +109,9 @@ I will be using an alpha value of `0.05` in a Tukey's Range test (one-tailed).
 
 ### Results
 
-<img src='https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-3-project/master/Northwind_ERD_updated.png'>
+<img src="Images-Used/Q4_1.png" width = "500" >
+
+<img src="Images-Used/Q4_2.png" width = "500" >
 
 We can reject the null hypothesis, since we've been able to show that there are in fact statistically significant differences between the amount each region purchases. What we can't do with our data is determine an order for which region purchases the most all the way down to which one purchases the least. The largest difference we discovered was between North America (with an average OrderCost of $1,540) and Southern Europe ($707). The Cohen's d-value between these two was 0.752, meaning there is a medium effect size between the two groups.
 
